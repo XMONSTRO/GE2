@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+		<title>Client-Side: HTML5, CSS3, JavaScript | Desenvolvimento WEB: Conhecimento sem limite.</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="pt" />
+		<meta name="description" content="No site Client-Side você vai encontrar artigos referentes ao 
+		desenvolvimento web clientside como HTML5; JavaScript; CSS3; e jQuery" />
+		<meta name="keywords" content="JavaScript, CSS3, HTML5, jQuery" />
+		<meta name="author" content="Douglas Marcori" >
+		<script type="text/javascript" src="js/comportamento.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
+	</head>
+	<body>
+		<div id="geral">
+			<div id="cabecalho">
+				<div id="logotipo">
+					<a href="/clientside/index.php">
+						<img width="100" height="110 " src="/tmp/guest-ydqcdz/Downloads/2TDS-main/2TDS-main (3)/2TDS-main/img/Ge.jpeg" title="Ge" alt="Ge" border="0" />
+					</a>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a href="/clientside/index.php">Home</a></li>
+						<li>ligas</li>
+						<li>jogadores</li>
+						<li>estásticas</li>
+						<li>clubes</li>
+						<li>seleções</li>
+						<li>noticias</li>
+						<li><a href="index.php?pag=fale-conosco">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+				<? if($pag == ""){?>
+				<div id="destaques">
+					<div id="destaques_top">
+						<div id="destaque_top_esquerda">
+							<h1>Messi ganha sua oitava bola de ouro.</h1>
+							<p>
+							Nesta segunda-feira (30), em Paris, com transmissão pela ESPN no Star+,
+							Lionel Messi foi mais uma vez vencedor da "Bola de Ouro, entregue pela France Football,
+							e conquistou a honraria pela 8ª vez na carreira. Com o troféu,
+							o astro se isolou na ponta como líder da premiação.
+						    </p>
+							
+							<img src="Messi.bola.jpeg"/>
+							
+							<h1>Fluminense campeãop da  américa</h1>
+							<p>Com o título em cima do Boca Juniors, o Fluminense conquistou a primeira Libertadores da história do clube.</p>
+							
+							<p>A equipe carioca saiu da fila e ganhou sua primeira "plaquinha" de campeão da competição. A taça inédita veio neste sábado,
+							com a vitória por 2 a 1 sobre os argentinos, no Maracanã.</p>
+							
+							<pre>Fluminense x boca juniors</pre>
+							
+							<p>
+							O Boca Juniors tem seis títulos da Libertadores. A equipe argentina segue na fila. O último título foi conquistado em 2007,
+							na final sobre o Grêmio. Antes, o time foi campeão em 1977, 1978, 2000, 2001 e 2003.
+
+							</p>
+						</div>
+						
+						<div id="destaque_top_direita">
+							<h1>Conheça a história de jhon kenedy.</h1>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/0bxYf88gYLY?si=xdaSOmnjx51x1F1l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</span>
+							
+							<div  id="destuqe_top_direita_especial">
+								<div class="destaque_top_direita_dividido">
+									<h1>São paulo conquista titulo inédito</h1>
+									
+									<p>
+										No Morumbi, Tricolor empata com o Flamengo com gol de Rodrigo Nestor e conquista 
+										título inédito. Na tarde deste domingo (24),o Estádio do Morumbi
+										 foi palco do jogo de volta da final da Copa do Brasil de 2023,
+										 onde o São Paulo empatou com o Flamengo e se sagrou CAMPEÃO da competição nacional.</p>
+								</div>
+								<div class="destaque_top_direita_dividido">
+
+									<h1>Palmeiras bate flamengo por 4x3 em final de supercopa.</h1>
+
+									<p>
+										Palmeiras vence Flamengo em jogo épico de 7 gols e é campeão da Supercopa do Brasil pela 1ª vez
+								    </p>
+								</div>
+							</div>
+						</div>
+					</div> 
+					<div id="destaques_bottom">
+						<div id="destaque_bottom_esquerda">
+							<h1>Argentina campeã da copa do mundo <code>.Argentina</code></h1>
+							<p>
+							A <code>.Argentina</code> Em 18 de dezembro de 2022, a Argentina derrotou a França nos pênaltis
+							na histórica Final da Copa do Mundo da FIFA para se tornar campeã do mundo após 36 anos,
+							com um espetacular Lionel Messi liderando dentro do campo e uma equipe que apaixonou milhões de pessoas.
+						    </p>
+						</div>
+						<div id="destaque_bottom_direita">
+							<img width="150px" height="100px" src="/tmp/guest-ydqcdz/Downloads/2TDS-main/2TDS-main (3)/2TDS-main/img/Endrick.jpeg" />
+							<h1>Conheça a promessa do palmeiras</h1>
+						</div>
+					</div>
+				</div>
+				<?
+				}else{
+					include($pag.".BASQUETE");
+				}?>
+			</div>
+			<div id="rodape">
+				<div id="navegacao">
+					<div class="rodape_navegacao_itens">
+						<h1>&lt;BASQUETE&gt;</h1>
+						<ul>
+							<li><a href="index.php?pag=html-e-o-novo-html">Luka Dončić faz 60-21-10 e estabelece novo recorde na NBA.</a></li>
+							<li>Embid MVP da temporada regular da NBA.</li>
+							<li>Nikola Jokic MVP das finais da NBA.</li>
+							<li>Denver nuggets conquista seu primeiro titulo da NBA.</li>
+							<li>Gui Santos assina contrato e se tornara o 19* jogador do Warriors</li>
+					</div>
+					<div class="rodape_navegacao_itens">
+						<h1>&lt;BOXE&gt;</h1>
+						<ul>
+							<li>Gervonta Davis nocauteia Ryan Garcia e mantem a invencibilidade de 29-0-0.</li>
+						</ul>
+					</div>
+					<div class="rodape_navegacao_itens">
+						<h1>&lt;UFC&gt;</h1>
+						<ul>
+							<li>Luta entre Charles Oliveira e Isla Mackachev cancelada.</li>
+							<li>Jon Jones maior da história do UFC finaliza Ciryl Gane e conquista o cinturão da categoria Peso-pesado.</li>
+							<li>Alex Poatan nocauteia Israel Adesanya conquista o cinturão e quebra a ivencibilidade do Nigeriano no UFC.</li>
+							<li>Islam mackachev nocauteia Alexander Volkanovski e defende seu cinturão.</li>
+							<li>Alex Poatan luta amanhã 12/11/2023 as 02:00 AM contra Jiri Prochazka pelo titulo do Peso Meio-pesado.</li>
+							<li>Luta enre Jon Jones e Stipe Miočić Cancelada.</li>
+							<li>Luta entre Borrachinha x chimaev pelo cinturão sera remarcada.</li>
+						</ul>
+					</div>
+					<div class="rodape_navegacao_itens">
+						<h1>Tenis</h1>
+						<ul>
+							<li>Carlos Alcaraz vence Novak Djokovic em conquista o Gran Slam de Wimbledon.</li>
+							<li>Novak Djokovic vence Daniil Medvedev conquista o Grand Slam de US Open e assumi a primeira colocção do ranking Mundial.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="direitos_reservados">
+				<hr />
+				© 2021-2023. Todos Os Direitos São Reservados.
+			</div>
+		</div>
+	</body>
+</html>
